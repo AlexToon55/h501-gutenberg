@@ -1,0 +1,8 @@
+name: H501-GUTENBERG
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - ipykernel
+    - pandas
+    - seaborn
