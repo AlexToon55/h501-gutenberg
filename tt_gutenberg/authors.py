@@ -1,15 +1,8 @@
 # Imports
-import pandas
+import pandas as pd
+from .dataset import load_authors, load_languages, load_metadata
 
 
-
-
-
-#Functions
-def tt_gutenberg():
-
-
-
-
-gutenberg_authors = pandas.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-03/gutenberg_authors.csv')
-    return gutenberg_authors
+def _languages_per_author():
+    """Build a small dataframe of author_id and number of languages."""
+authors = load.authors()
